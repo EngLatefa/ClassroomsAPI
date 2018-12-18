@@ -5,21 +5,26 @@ class ClassListSerializer(serializers.ModelSerializer):
     class Meta:
         model = Classroom
         fields = [
-            'subject',
-            'year',
-            'teacher',
-            ]
+                'subject',
+                'year',
+                'teacher',]
 
 
 class ClassDetailSerializer(serializers.ModelSerializer):
     class Meta:
         model = Classroom
-        fields = ['__all__']
+        fields = [
+                'subject',
+                'year',
+                'teacher',]
 
 class ClassUpdateSerializer(serializers.ModelSerializer):
     class Meta:
         model = Classroom
-        fields = ['__all__']
+        fields = [
+                'subject',
+                'year',
+                'teacher',]
 
 class ClassCreateSerializer(serializers.ModelSerializer):
     class Meta:
